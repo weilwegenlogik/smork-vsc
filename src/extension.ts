@@ -37,8 +37,14 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 function incrementAndExecute(level: 'major' | 'minor' | 'patch') {
-    const packageJsonPath = vscode.workspace.rootPath + '/package.json';
-    const packageJson = require(packageJsonPath);
+    const packageJsonPath = vscode.workspace.workspaceFolders ? vscode.workspace.workspaceFolders[0].uri.fsPath + '/package.json' : null;
+if (!packageJsonPath) {
+    vscode.window.showErrorMessage('No workspace found.');
+    return;
+}
+const packageJsonContent = fs.readFileSync(packageJsonPath, 'utf8');
+const packageJson = JSON.parse(packageJsonContent);
+
     packageJson.version = incrementVersion(packageJson.version, level);
     fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
