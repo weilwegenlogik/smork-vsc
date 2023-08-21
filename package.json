@@ -3,7 +3,7 @@
   "displayName": "smork-vsc",
   "description": "extension for smork project manager that helps with versioning for now",
   "version": "0.0.4",
-  "publisher": "acidicspace.com",
+  "publisher": "acidicspace",
   "icon": "logo_square.png",
   "engines": {
     "vscode": "^1.81.0"
