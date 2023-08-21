@@ -44,8 +44,7 @@
             "icon": {
               "dark": "resources/major.png",
               "light": "resources/major.png"
-            },
-            "when": "editorTextFocus"
+            }
         },
         {
             "command": "extension.incrementMinor",
@@ -53,8 +52,7 @@
             "icon": {
               "dark": "resources/minor.png",
               "light": "resources/minor.png"
-            },
-            "when": "editorTextFocus"
+            }
         },
         {
             "command": "extension.incrementPatch",
@@ -62,8 +60,7 @@
             "icon": {
               "dark": "resources/patch.png",
               "light": "resources/patch.png"
-            },
-            "when": "editorTextFocus"
+            }
         }
     ]
   },
