@@ -1,6 +1,6 @@
 # Smork VS Code Extension
 
-![Smork Logo](./logo.png)
+![Smork Logo](resources/logo.png)
 
 This is a Visual Studio Code extension for the Smork project manager. It helps with versioning and provides buttons to increment major, minor, or patch versions and execute the program using `npm start`.
 

@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
         console.log(extension.packageJSON.contributes.statusbarItems);
     });
 
-    /*
+    
     let majorButton = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
     majorButton.text = "$(triangle-up) Major";
     majorButton.command = 'extension.incrementMajor';
@@ -23,7 +23,6 @@ export function activate(context: vscode.ExtensionContext) {
     patchButton.text = "$(triangle-up) Patch";
     patchButton.command = 'extension.incrementPatch';
     patchButton.show();
-    */
 
     context.subscriptions.push(
         vscode.commands.registerCommand('extension.incrementMajor', () => {
