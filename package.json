@@ -2,7 +2,7 @@
   "name": "smork-vsc",
   "displayName": "smork-vsc",
   "description": "extension for smork project manager that helps with versioning for now",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "acidicspace",
   "icon": "logo_square.png",
   "engines": {
@@ -41,16 +41,28 @@
         {
             "command": "extension.incrementMajor",
             "group": "navigation",
+            "icon": {
+              "dark": "resources/major.png",
+              "light": "resources/major.png"
+            },
             "when": "editorTextFocus"
         },
         {
             "command": "extension.incrementMinor",
             "group": "navigation",
+            "icon": {
+              "dark": "resources/minor.png",
+              "light": "resources/minor.png"
+            },
             "when": "editorTextFocus"
         },
         {
             "command": "extension.incrementPatch",
             "group": "navigation",
+            "icon": {
+              "dark": "resources/patch.png",
+              "light": "resources/patch.png"
+            },
             "when": "editorTextFocus"
         }
     ]
