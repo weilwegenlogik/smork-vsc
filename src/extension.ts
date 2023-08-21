@@ -3,6 +3,11 @@ import * as fs from 'fs';
 import * as child_process from 'child_process';
 
 export function activate(context: vscode.ExtensionContext) {
+    vscode.extensions.all.forEach(extension => {
+        console.log(extension.packageJSON.displayName);
+        console.log(extension.packageJSON.contributes.statusbarItems);
+    });
+
     let majorButton = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
     majorButton.text = "$(triangle-up) Major";
     majorButton.command = 'extension.incrementMajor';
