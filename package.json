@@ -13,14 +13,23 @@
     "type": "git",
     "url": "https://github.com/weilwegenlogik/smork-vsc.git"
   },
+  
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "smork-vsc.helloWorld",
-        "title": "Hello World"
-      }
+        {
+            "command": "extension.incrementMajor",
+            "title": "Increment Major Version"
+        },
+        {
+            "command": "extension.incrementMinor",
+            "title": "Increment Minor Version"
+        },
+        {
+            "command": "extension.incrementPatch",
+            "title": "Increment Patch Version"
+        }
     ]
   },
   "scripts": {
