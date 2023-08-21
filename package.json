@@ -2,7 +2,9 @@
   "name": "smork-vsc",
   "displayName": "smork-vsc",
   "description": "extension for smork project manager that helps with versioning for now",
-  "version": "0.0.3",
+  "version": "0.0.4",
+  "publisher": "acidicspace.com",
+  "icon": "logo_square.png",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -13,7 +15,6 @@
     "type": "git",
     "url": "https://github.com/weilwegenlogik/smork-vsc.git"
   },
-  
   "activationEvents": [
     "onStartupFinished",
     "*"
@@ -21,17 +22,36 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
+      {
+        "command": "extension.incrementMajor",
+        "title": "Increment Major Version"
+      },
+      {
+        "command": "extension.incrementMinor",
+        "title": "Increment Minor Version"
+      },
+      {
+        "command": "extension.incrementPatch",
+        "title": "Increment Patch Version"
+      }
+    ]
+  },
+  "menus": {
+    "editor/title": [
         {
             "command": "extension.incrementMajor",
-            "title": "Increment Major Version"
+            "group": "navigation",
+            "when": "editorTextFocus"
         },
         {
             "command": "extension.incrementMinor",
-            "title": "Increment Minor Version"
+            "group": "navigation",
+            "when": "editorTextFocus"
         },
         {
             "command": "extension.incrementPatch",
-            "title": "Increment Patch Version"
+            "group": "navigation",
+            "when": "editorTextFocus"
         }
     ]
   },
@@ -57,6 +77,5 @@
     "typescript": "^4.9.5",
     "vscode": "^1.1.34"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
