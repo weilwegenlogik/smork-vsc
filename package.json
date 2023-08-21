@@ -9,6 +9,10 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weilwegenlogik/smork-vsc.git"
+  },
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
@@ -22,6 +26,7 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
+    "package": "vsce package",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
@@ -37,9 +42,9 @@
     "eslint": "^8.41.0",
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vscode": "^1.1.34"
   },
   "dependencies": {
-    "vscode": "^1.1.34"
   }
 }
