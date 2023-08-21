@@ -2,7 +2,7 @@
   "name": "smork-vsc",
   "displayName": "smork-vsc",
   "description": "extension for smork project manager that helps with versioning for now",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.81.0"
   },
