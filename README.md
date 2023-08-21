@@ -6,7 +6,7 @@ This is a Visual Studio Code extension for the Smork project manager. It helps w
 
 ## Features
 
-- Increment major, minor, or patch versions using buttons in the status bar.
+- Increment major ![major](resources/major.png), minor ![minor](resources/minor.png), or patch ![patch](resources/patch.png) versions using buttons in the status bar.
 - Execute the program using `npm start` after version increment.
 
 ## Installation
